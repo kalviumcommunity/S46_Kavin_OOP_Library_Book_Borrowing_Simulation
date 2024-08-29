@@ -3,6 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 /.idea
+S46_Kavin_OOP_Library_Book_Borrowing_Simulation.iml
 
 ### Eclipse ###
 .apt_generated
