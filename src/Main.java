@@ -1,6 +1,7 @@
 import book.Book;
 import library.Library;
 import user.Student;
+import user.User;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +15,8 @@ public class Main {
 
         lib.borrowBook("book1", "john");
         System.out.println(lib.searchUser("john"));
+
+        System.out.println("Total number of books: " + Book.getBookCount());
+        System.out.println("Total number of users: " + User.getUserCount());
     }
 }
