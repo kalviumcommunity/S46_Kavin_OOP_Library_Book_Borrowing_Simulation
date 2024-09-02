@@ -9,11 +9,18 @@ public abstract class User {
     private String name;
     private ArrayList<BorrowedBook> borrowedBooks;
 
+    private static int userCount = 0;
+
     protected final Logger LOGGER = new Logger();
 
     public User(String name) {
         this.name = name;
         this.borrowedBooks = new ArrayList<>();
+        userCount++;
+    }
+
+    public static int getUserCount() {
+        return userCount;
     }
 
     public abstract void borrowBook(Book book);

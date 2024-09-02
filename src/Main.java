@@ -1,5 +1,6 @@
 import book.Book;
 import user.Student;
+import user.User;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +26,8 @@ public class Main {
 
         System.out.println(john);
         System.out.println(steve);
+
+        System.out.println("Total book count: " + Book.getBookCount());
+        System.out.println("Total user count: " + User.getUserCount());
     }
 }
