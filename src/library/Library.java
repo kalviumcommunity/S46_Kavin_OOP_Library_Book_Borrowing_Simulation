@@ -67,5 +67,13 @@ public class Library {
             System.out.println(user.getName() + " has borrowed " + book.getBookName());
         }
     }
+
+    public static void getUserCount() {
+        System.out.println("Total number of users enrolled in this library are: " + User.getUserCount());
+    }
+
+    public static void getBookCount() {
+        System.out.println("Total number of books recorded in this library are: " + Book.getBookCount());
+    }
 }
 
