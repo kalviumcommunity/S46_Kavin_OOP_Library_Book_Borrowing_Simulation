@@ -4,9 +4,16 @@ public class Book {
     private String bookName;
     private boolean isAvailable;
 
+    private static int bookCount = 0;
+
     public Book(String bookName) {
         this.bookName = bookName;
         this.isAvailable = true;
+        bookCount++;
+    }
+
+    public static int getBookCount() {
+        return bookCount;
     }
 
     public void changeAvailable() {
